@@ -1,0 +1,12 @@
+ctrl + c
+rm -rf session
+rm -rf auth_info*
+rm -rf creds.json
+node -v
+pkg uninstall nodejs -y
+pkg install nodejs-lts -y
+rm -rf node_modules package-lock.json
+npm install
+npm install --legacy-peer-deps
+npm start
+node index.js
